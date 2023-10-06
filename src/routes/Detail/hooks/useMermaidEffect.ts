@@ -7,19 +7,20 @@ const useMermaidEffect = () => {
       startOnLoad: true,
     })
     if (!document) return
-    const elements: HTMLCollectionOf<Element> =
-      document.getElementsByClassName("language-mermaid")
+    const elements: any = document.getElementsByClassName("language-mermaid")
     if (!elements) return
 
-    for (let i = 0; i < elements.length; i++) {
-      mermaid.render(
-        "mermaid" + i,
-        elements[i].textContent || "",
-        (svgCode: string) => {
-          elements[i].innerHTML = svgCode
-        }
-      )
+    const renderMermaid = async () => {
+      for (let i = 0; i < elements.length; i++) {
+        const { svg } = await mermaid.render(
+          "mermaid" + i,
+          elements[i].textContent || ""
+        )
+        elements[i].innerHTML = svg
+      }
     }
+
+    renderMermaid()
   }, [])
 
   return

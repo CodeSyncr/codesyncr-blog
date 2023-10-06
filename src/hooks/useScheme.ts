@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useQuery, useQueryClient } from "@tanstack/react-query"
 import { getCookie, setCookie } from "cookies-next"
 import { useEffect } from "react"
