@@ -4,7 +4,7 @@ const CONFIG = {
     name: "Kumar Yash",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "fullstack developer",
-    bio: "I develop everything using node.",
+    bio: "I develop everything from Software to Electronics.",
     email: "yashkumar12125@gmail.com",
     linkedin: "yash-kumar-890b3b188",
     github: "CodeSyncr",
@@ -34,7 +34,7 @@ const CONFIG = {
   ],
   // blog setting (required)
   blog: {
-    title: "codesyncr-blog",
+    title: "CodeSyncr Blog",
     description: "welcome to CodeSyncr Blog!",
   },
 
@@ -71,7 +71,7 @@ const CONFIG = {
     },
   },
   cusdis: {
-    enable: false,
+    enable: true,
     config: {
       host: "https://cusdis.com",
       appid: "b2e52387-5af5-469b-878e-678c6892875a", // Embed Code -> data-app-id value
